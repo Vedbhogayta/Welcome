@@ -3,384 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylish Banner</title>
+    <title>Gaming Platform</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <style>
         body {
-    margin: 10;
-    padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #1a1a1a;  /* Dark background */
-}
-
-.top-banner {
-    background-color: #333;
+    background-color: #111;
+    color: #eee;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
-.contact-info {
-    display: flex;
-    gap: 15px;
+.search-container {
     margin-bottom: 20px;
-    width: 100%;
-    justify-content: space-between;
 }
 
-.mobile, .email {
+input[type="text"] {
     padding: 10px;
+    width: 70%;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #444;
+    color: #eee;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.game-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #222;
     border-radius: 5px;
-    font-weight: bold;
 }
 
-.mobile {
-    background-color: #ff3300;  /* Red Background */
-    color: #fff;  /* White Text */
+.game-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
 }
 
-.email {
-    background-color: #00ff66;  /* Green Background */
-    color: #000;  /* Black Text */
+.game-details {
+    flex: 1;
 }
 
-.welcome-box {
-    padding: 20px;
-    border: 2px solid #fff;
-    text-align: center;
-    border-radius: 15px;
-    animation: welcomeAnimation 2s infinite alternate;
-}
-
-@keyframes welcomeAnimation {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.05);
-    }
-}
-
-.step1 {
-    font-family: 'Times New Roman', Times, serif;
-    color: #ff3300;  /* Red Color */
-    font-size: 2rem;
-    animation: step1Animation 1.5s infinite alternate;
-}
-
-@keyframes step1Animation {
-    0% {
-        letter-spacing: 1px;
-    }
-    100% {
-        letter-spacing: 5px;
-    }
-}
-
-.step2 {
-    font-family: 'Courier New', Courier, monospace;
-    color: #00ff66;  /* Green Color */
-    font-size: 2.5rem;
-    animation: step2Animation 1.5s infinite alternate;
-}
-
-@keyframes step2Animation {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.5;
-    }
-}
-
-.step3 {
-    font-family: 'Georgia', serif;
-    color: #ff00ff;  /* Magenta Color */
-    font-size: 3rem;
-    animation: step3Animation 1.5s infinite alternate;
-}
-
-@keyframes step3Animation {
-    0% {
-        text-shadow: 0 0 10px #ff00ff;
-    }
-    100% {
-        text-shadow: 0 0 15px #ff00ff, 0 0 20px #ff00ff;
-    }
+.game-download-link {
+    color: #00f;
+    text-decoration: none;
 }
 
     </style>
-    <div class="top-banner">
-        <div class="contact-info">
-            <span class="mobile">+91 9512851613</span>
-            <span class="email">Consilhotel@gmail.com</span>
-        </div>
-        <div class="welcome-box">
-            <span class="step1">Welcome</span><ul></ul>
-            <span class="step2">To</span><ul></ul>
-            <span class="step3">Consil Hotel Porbandar</span>
-        </div>
+    <center><div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search for Apps...">
+        <button onclick="searchGames()">CLICK</button>
     </div>
-</body>
-</html>
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banner for Consils Hotel</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        
-        .banner {
-            background-color: white;
-            color: black;
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 1000px;
-            margin: 50px auto;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-        }
-
-        .banner h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .banner a {
-            display: inline-block;
-            background-color: #FFD700; /* gold color */
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .banner a:hover {
-            background-color: #FFC400;
-        }
-
-    </style>
-</head>
-<body>
-
-<div class="banner">
-    <h1>Best Offer For Students</h1>
-    <p>21/10/2023 to 21/11/2023</p>
-    <p>Discounts to Room</p>
-    <a href="studentproof.html">Click for Students Rooms Price</a>
-</div>
-
-</body>
-</html>
-
-<ul></ul>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Hotel Rooms</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: black;
-            color: white;
-            padding: 50px;
-        }
-
-        .room-description {
-            margin-bottom: 20px;
-        }
-
-        .price-link {
-            display: block;
-            background-color: blue;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            width: fit-content;
-            margin: 20px auto;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
-</head>
-<body>
-
-<div class="room-description">
-    <strong>𝐓𝐨𝐭𝐚𝐥 𝐑𝐨𝐨𝐦𝐬:</strong> 𝟑𝟎𝟎
-    <p>Our hotel boasts 300 elegantly designed rooms that offer a blend of comfort and style to ensure a memorable stay.</p>
-</div>
-
-<div class="room-description">
-    <strong>Total AC Rooms:</strong> 𝟔𝟎
-    <p>Out of our 300 rooms, 60 are equipped with state-of-the-art air conditioning to ensure guests stay cool and comfortable during their visit.</p>
-</div>
-
-<div class="room-description">
-    <strong>Total NON AC Rooms:</strong> 𝟓𝟎
-    <p>For guests who prefer natural ventilation, we offer 50 non-AC rooms that are designed to provide comfort and relaxation.</p>
-</div>
-
-<a href="lkjh.html" class="price-link">Click to see prices</a>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facilities</title>
-    <style>
-        .facilities-box {
-            background-color: silver;
-            color: black;
-            padding: 20px;
-            border-radius: 10px;
-            width: 70%;
-            max-width: 500px;
-            margin: 50px auto;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-        }
-        
-        .facilities-box h3, .facilities-box p {
-            margin: 10px 0;
-        }
-    </style>
-</head>
-<body>
-
-<div class="facilities-box">
-    <h3>Types of AC Room</h3>
-    <p>24 hours employees available. Anytime you call to your room employees, employees are there to assist. We provide inverters exclusively for AC users.</p><br>
-    
-    <ul></ul><hr>
-    
- <br>   <h3>Types of NON AC Room</h3>
-    <p>24 hours employees available. Anytime you call to your room employees, employees are there to assist. However, please note that we do not provide inverters for NON AC rooms.</p>
-</div>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Hotel</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: black;
-            color: #ecf0f1;
-            text-align: center;
-            padding: 50px;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-        }
-
-        p {
-            font-size: 1.2em;
-            line-height: 1.5;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        a.book-now {
-            display: inline-block;
-            background-color: #e74c3c;
-            color: #ecf0f1;
-            padding: 10px 20px;
-            font-size: 1.5em;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-top: 30px;
-            transition: background-color 0.3s ease;
-        }
-
-        a.book-now:hover {
-            background-color: #c0392b;
-        }
-    </style>
-</head>
-<body>
-    <h1>About to My Hotel</h1>
-    <p>
-        Experience luxury and comfort at its best in our fully stylish hotel. Nestled in the heart of the city, we offer top-notch amenities and unparalleled service that guarantees a memorable stay.
-    </p>
-    <a href="lkjh.html" class="book-now">Book Now</a>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - My Hotel</title>
-    <style>
-        .body {
-            font-family: 'Arial', sans-serif;
-            background-color: black; /* A calm and light grayish-blue */
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 30px;
-        }
-
-        p {
-            font-size: 1.2em;
-            line-height: 1.5;
-            max-width: 800px;
-            margin: 0 auto 20px;
-        }
-
-        .contact-info {
-            font-size: 1.2em;
-            margin-top: 20px;
-        }
-
-        a {
-            color: #2980b9; /* A blue link color */
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <h1>Contact Us</h1>
-    <p>
-        We'd love to hear from you! Whether you have a question about reservations, services, or anything else, our team is ready to answer all your questions.
-    </p>
-
-    <div class="contact-info">
-        <p>Email: <a href="mailto:info@myhotel.com">consilhotel01@gmail.com</a></p>
-        <p>Phone: <a href="tel:+91 9512851613">+91 9512851613</a></p>
+    <div id="gamesList" class="games-list">
+        <!-- Games will be populated here -->
     </div>
+
+    <script src="script.js"></script>
+    <script>
+        const games = [
+    { name: "FREE FIRE INDIA 🇮🇳", imageUrl: "minimalist-logo-free-fire-banner-wisbgb2gy1oej2io.jpg", downloadLink: "https://modcombo.io/free-fire-india.html" },
+    { name: "(BATTLE GROUND MOBILE INDIA 🇮🇳)BGMI", imageUrl: "BGMI_Official_Logo.jpg", downloadLink: "https://battlegrounds-mobile-india.en.uptodown.com/android/download" },
+      { name: "PUBG MOBILE LITE", imageUrl: "pubg_mobile_lite_google_play_1533881298207.jpg", downloadLink: "https://pubg-mobile-lite.en.uptodown.com/android/download" },
+        { name: "INSTAGRAM", imageUrl: "instagram-1581266_640.jpg", downloadLink: "https://instagram.en.uptodown.com/android/download" },
+          { name: "SNAPCHAT", imageUrl: "8321386493d27b75389b6265d9fffdca.jpg", downloadLink: "https://snapchat.en.uptodown.com/android" },
+            { name: "FLIPKART", imageUrl: "png-transparent-flipkart-logo-computer-icons-encapsulated-postscript-others-service-logo-business-thumbnail.png", downloadLink: "https://flipkart.en.softonic.com/android/download?ex=RAMP-1391.3" },
+               { name: "AMAZON", imageUrl: "png-clipart-logo-amazon-com-brand-flipkart-others-text-orange-thumbnail.png", downloadLink: "https://amazon-shopping.en.uptodown.com/android/download" },
+                  { name: "WHATSHAPP", imageUrl: "1384023.png", downloadLink: "https://www.whatsapp.com/android" },
+                    { name: "DOMINO'S PIZZA", imageUrl: "09ba9064-bd51-49ae-bec0-e6ab2144024a.jpg", downloadLink: "https://dominos-pizza-group-ltd-domino.en.uptodown.com/android" },
+                       { name: "TRUECALLER", imageUrl: "truecaller app ads-ms-nvcpwzqkca.jpg", downloadLink: "https://www.truecaller.com/" },
+                          { name: "TWITTER", imageUrl: "twitter-icon-circle-black-logo-35827D553B-seeklogo.com.png", downloadLink: "https://twitter.en.uptodown.com/android/download" },
+                            { name: "JM TOOLS", imageUrl: "jm tools apk.png", downloadLink: "https://www.google.com/amp/s/m.apkpure.com/jm-tools-pro-gfx-for-any-games/app.rizqi.jmtools/amp" },
+                               { name: "JAVA SCRIPT PROGRAMMING LANGUAGE", imageUrl: "kisspng-javascript-programmer-logo-programming-language-program-logo-5b407df7636075.6807421015309532074071.jpg", downloadLink: "https://java-programming.en.uptodown.com/android" },
+                                   { name: "PHP PROGRAMMING LANGUAGE", imageUrl: "1975.png", downloadLink: "https://apkpure.com/learn-php-programming/php.coding.programming.learn.web.website.development/amp" },
+                                      { name: "PYTHON PROGRAMING LANGUAGE", imageUrl: "a26c4b485716a585073da2af4328a8cd.jpg", downloadLink: "https://python-3.en.uptodown.com/android" },
+                                        { name: "C++ PROGRAMMING LANGUAGE", imageUrl: "Top-Uses-Of-C.jpg", downloadLink: "https://developerinsider.co/download-turbo-c-for-windows-7-8-8-1-and-windows-10-32-64-bit-full-screen/amp/" },
+                                          { name: "C PROGRAMMING LANGUAGE", imageUrl: "715b59c8c7545d9dafb1a04111edde40.jpg", downloadLink: "https://c-free.en.softonic.com/?ex=RAMP-1391.3" },
+                                            { name: "BACKGROUND REMOVER", imageUrl: "erasebg_34674_logo_1648806396_pdvef.jpg", downloadLink: "https://apkloo.com/remove-bg-mod/" },
+                                              { name: "INDIAN VPN", imageUrl: "07zgBPVEQjBd62zqeZfZ7p1-1..v1652886589.jpg", downloadLink: "https://india-vpn.en.uptodown.com/android" },
+                                                { name: "ZOMATO", imageUrl: "zomato-logo-zomato-icon-free-free-vector (1).jpg", downloadLink: "https://zomato.en.uptodown.com/android/download" },
+                                                   { name: "DIGI LOCKER", imageUrl: "92777e3bb33a18a9a34188664d32349a.png", downloadLink: "https://www.digilocker.gov.in/" },
+                                                     { name: "SPOTIFY MUSIC", imageUrl: "icon3@2x.png", downloadLink: "https://www.spotify.com/us/download/android/" },
+                                                       { name: "RTO GUJARAT", imageUrl: "360_F_520186124_7t0xUSwsRQXU9u0l7ccVrTl46FRcJMdA.jpg", downloadLink: "https://rto-vehicle-information-vahan.en.softonic.com/android?ex=RAMP-1391.3" },  
+    { name: "GIT HUB", imageUrl: "GitHub-logo.png", downloadLink: "https://github-android.en.uptodown.com/android" },     
+          { name: "IMAGE TO PDF MAKER", imageUrl: "638_pdf_icon.jpg", downloadLink: "https://www.ilovepdf.com/jpg_to_pdf" },
+              { name: "ZARCHIVER", imageUrl: "1a0611cc-b86e-4550-8d6b-7ec4f7ad8646.jpg", downloadLink: "https://zarchiver.en.uptodown.com/android" },                    
+                   { name: "MAPPLE MAP INDIA 🇮🇳", imageUrl: "mappls-og.png", downloadLink: "https://www.google.com/amp/s/apkpure.com/mappls-mapmyindia-maps-safety/com.mmi.maps/amp" },
+                     { name: "FAM PAY", imageUrl: "fampayLogo-1634713756429.png", downloadLink: "https://filehippo.com/android/download_fampay-upi-card-for-teens/" },
+                         { name: "PHONE PAY", imageUrl: "2acfb6fb41f7fcb82c3230afdecff714.jpg", downloadLink: "https://www.phonepe.com/app-download/" },
+                           { name: "GOOGLE PAY", imageUrl: "black-google-pay-logotype-white-background-logo-mobile-payment-system-electronic-wallet-contactless-nfc-android-operating-system-gpay-editorial_661108-8063.jpg", downloadLink: "https://google-pay-tez.en.uptodown.com/android/download" },
+                                 { name: "PAYTM", imageUrl: "pt_main.jpg", downloadLink: "https://paytm.com/download-paytm-app" },
+                                    { name: "SWIGGY", imageUrl: "swiggy-black2725.jpg", downloadLink: "https://swiggy.en.uptodown.com/android" },
+                                          { name: "SOLO VPN", imageUrl: "ea29a8a3488969315a93d6911d6e9bf0.jpg", downloadLink: "https://solo-vpn.en.uptodown.com/android/download" },     
+                                             { name: "KINE MASTER", imageUrl: "Kine_Master-512.png", downloadLink: "https://apkmodget.com/apps/kinemaster-mod-apk-without-watermark-free-1-latest/" },                  
+                                 
+    // Add more games as needed
+];
+
+
+function searchGames() {
+    const searchTerm = document.getElementById('searchBar').value.toLowerCase();
+    const gamesList = document.getElementById('gamesList');
+
+    gamesList.innerHTML = ''; // Clear the list
+
+    for (const game of games) {
+        if (game.name.toLowerCase().includes(searchTerm)) {
+            gamesList.innerHTML += `
+                <div class="game-item">
+                    <img src="${game.imageUrl}" alt="${game.name}" class="game-image">
+                    <div class="game-details">
+                        ${game.name}
+                    </div>
+                    <a href="${game.downloadLink}" class="game-download-link">Download</a>
+                </div>
+            `;
+        }
+    }
+}
+
+    </script>
 </body>
 </html>
