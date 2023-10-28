@@ -1,97 +1,160 @@
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battlegrounds Mobile India Mockup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #202020;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 10px;
+        }
+        
+        .navbar img.logo {
+            width: 30px;
+            height: auto;
+        }
+        
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .navbar ul li {
+            display: inline;
+        }
+        
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #555;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+        }
+
+        .banner p {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        .banner img.game-image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 50px;
+        }
+        
+      footer {
+    background-color: silver;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+        
+        
+    </style>
+
+<div class="navbar">
+    <img src="IMG_20231028_124648-removebg-preview.png" alt="Game Logo" class="logo">
+    <ul>
+        <li><a href="lodu.html">Example</a></li>
+        <li><a href="#">Download</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+
+<div class="banner">
+    <h1>Welcome  </h1>
+    <p>Discover an extensive collection of app descriptions curated by Team Ved Bhogayta. Whether you've downloaded an app, are thinking about making a purchase, or are just browsing, our comprehensive guide offers insights into all apps available. Dive deep into the details and make informed decisions with the trusted guidance of Team Ved Bhogayta.<ul></ul>
+
+If you have more specific details or requirements for the description, please let me know, and I'll be happy to help further!</p>
+    <img src="Picsart_23-10-28_13-00-47-818.jpg" alt="Game Image" class="game-image">
+</div>
+<ul></ul>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration & Login</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <title>Website Rating</title>
     <style>
-        body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1a1a1a;
-}
+        .rating {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
 
-.container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    background-color: #1a1a1a;
-}
+        .star {
+            font-size: 24px;
+            cursor: pointer;
+            color: grey;
+        }
 
-form {
-    width: 250px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background-color: silver;
-}
+        .star:hover, .star.active {
+            color: gold;
+        }
 
-input {
-    width: 100%;
-    padding: 05px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
+        #rating-count {
+            font-size: 20px;
+        }
     </style>
-    <div class="container" style="background-image: url('path_to_your_background_image.jpg')">
-        <!-- Registration Form -->
-        <form id="registration-form">
-            <h2>Register Your Id</h2>
-            <input type="text" id="register-username" placeholder="Username" required>
-            <input type="password" id="register-password" placeholder="Password" required>
-            <button type="button" onclick="register()">Register</button>
-        </form>
-        
-        <!-- Login Form -->
-        <form id="login-form" style="display: none;">
-            <h2>Conform Login</h2>
-            <input type="text" id="login-username" placeholder="Username" required>
-            <input type="password" id="login-password" placeholder="Password" required>
-            <button type="button" onclick="login()">Login</button>
-        </form>
-    </div>
-    <script src="script.js"></script>
-    <script>
-        // Mock database (replace with real database in real-world applications)
-let users = {};
+</head>
 
-function register() {
-    let username = document.getElementById('register-username').value;
-    let password = document.getElementById('register-password').value;
 
-    if (users[username]) {
-        alert('User already exists!');
-    } else {
-        users[username] = password;
-        alert('Registration successful!');
-        
-        // Switch to login form
-        document.getElementById('registration-form').style.display = 'none';
-        document.getElementById('login-form').style.display = 'block';
-    }
-}
+<div class="rating">
+    <span class="star" data-value="1">★</span>
+    <span class="star" data-value="2">★</span>
+    <span class="star" data-value="3">★</span>
+    <span class="star" data-value="4">★</span>
+    <span class="star" data-value="5">★</span>
+</div>
 
-function login() {
-    let username = document.getElementById('login-username').value;
-    let password = document.getElementById('login-password').value;
+<center><p id="rating-count">Current Rating: Not Rated</p>
 
-    if (users[username] && users[username] === password) {
-        window.location.href = 'welcome.html'; // Redirect to second page
-    } else {
-        alert('Invalid credentials or user not found!');
-    }
-}
+<script>
+    let stars = document.querySelectorAll('.star');
+    stars.forEach(star => {
+        star.addEventListener('click', function() {
+            let value = this.getAttribute('data-value');
+            document.getElementById('rating-count').innerText = "Current Rating: " + value + "/5";
 
-    </script>
+            // Highlight the selected stars
+            stars.forEach(s => s.classList.remove('active'));
+            for (let i = 0; i < value; i++) {
+                stars[i].classList.add('active');
+            }
+        });
+    });
+</script>
+
+
+
+<footer>
+        <p>&copy; 2023-24 Ved Bhogayta</p>
+    </footer>
 
