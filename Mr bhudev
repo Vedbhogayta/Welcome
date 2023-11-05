@@ -1,4 +1,7 @@
 
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <style>
@@ -61,7 +64,7 @@ body {
             <li><a href="#">Buisness Ideas</a></li>
             <li><a href="#">Indian Top Brands</a></li>
             <li><a href="#">Health</a></li>
-            <li><a href="#">Travel Tourism/a></li>
+            <li><a href="#">Travel Tourism</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
@@ -69,5 +72,4 @@ body {
     <div class="content">
         <!-- Your webpage content goes here -->
     </div>
-</body>
-</html>
+
