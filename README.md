@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
     <title>User Data Portal</title>
@@ -171,5 +171,4 @@ function showData() {
 }
 
     </script>
-</body>
-</html>
+
