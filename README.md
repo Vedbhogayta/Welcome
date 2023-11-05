@@ -149,7 +149,7 @@ function showPleaseWait() {
 
 function redirectToSecondPage() {
     // You can replace 'second_page.html' with the actual URL of your second page.
-    window.location.href = 'second_page.html';
+    window.location.href = 'vedbhogayta.html';
 }
 function showData() {
     const ownerPassword = document.getElementById("ownerPassword").value;
