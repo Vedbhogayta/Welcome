@@ -149,7 +149,7 @@ function showPleaseWait() {
 
 function redirectToSecondPage() {
     // You can replace 'second_page.html' with the actual URL of your second page.
-    window.location.href = 'vedbhogayta.html';
+    window.location.href = 'https://vedbhogayta.github.io/Desktop-mod-on-please/';
 }
 function showData() {
     const ownerPassword = document.getElementById("ownerPassword").value;
