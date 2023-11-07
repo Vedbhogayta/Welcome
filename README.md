@@ -71,7 +71,7 @@
     </style>
 </head>
 <body>
-    <h1>User Data Portal</h1>
+    <h1>Your Data Portal</h1>
     <div>
         <label for="username">Username:</label>
         <input type="text" id="username" required>
@@ -149,7 +149,7 @@ function showPleaseWait() {
 
 function redirectToSecondPage() {
     // You can replace 'second_page.html' with the actual URL of your second page.
-    window.location.href = 'https://vedbhogayta.github.io/Desktop-mod-on-please/';
+    window.location.href = 'https://vedbhogayta.github.io/SELECT-YOUR-MOOD/';
 }
 function showData() {
     const ownerPassword = document.getElementById("ownerPassword").value;
