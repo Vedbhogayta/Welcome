@@ -91,8 +91,7 @@
     <div id="userDataContainer">
         <!-- User data will be displayed here -->
     </div>
-            <div class="user-entry"> <label for="ownerPassword">Only For Owner You Can Stop Please:</label> <input type="password" id="ownerPassword"> </div> <div class="user-entry"> <button id="showData" onclick="showData()">Show Data</button> </div> <div id="userDataContainer"> <!-- User data will be displayed here --> </div>
-    <div id="advertisement" style="display: none;">
+                <div id="advertisement" style="display: none;">
         <!-- Advertisement content goes here -->
         <header>
         <h1>Welcome to Rummy Circle</h1>
@@ -151,24 +150,7 @@ function redirectToSecondPage() {
     // You can replace 'second_page.html' with the actual URL of your second page.
     window.location.href = 'https://vedbhogayta.github.io/SELECT-YOUR-MOOD/';
 }
-function showData() {
-    const ownerPassword = document.getElementById("ownerPassword").value;
-    if (ownerPassword === "ved") {
-        const userDataContainer = document.getElementById("userDataContainer");
-        userDataContainer.innerHTML = "";
 
-        userData.forEach((user, index) => {
-            const userDiv = document.createElement("div");
-            userDiv.innerHTML = `<h3>User ${index + 1}:</h3>
-                                 <p>Username: ${user.username}</p>
-                                 <p>Mobile Number: ${user.mobile}</p>
-                                 <img src="${user.photo}" alt="User Photo" width="100">`;
-            userDataContainer.appendChild(userDiv);
-        });
-    } else {
-        alert("Incorrect owner password.");
-    }
-}
 
     </script>
 
